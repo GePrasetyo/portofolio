@@ -339,6 +339,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .facts b { color: var(--ink); font-weight: 600; }
 .facts span::before { content: ""; }
 
+.store { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+.store .cap { transform: rotate(-1deg); }
 .splash { margin-bottom: var(--gutter); }
 .splash .panel { aspect-ratio: 16 / 9; }
 
