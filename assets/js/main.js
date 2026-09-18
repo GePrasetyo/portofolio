@@ -101,6 +101,7 @@
 
   /* ---- scroll reveal --------------------------------------------- */
   var items = document.querySelectorAll('.reveal');
+  function showAll() { items.forEach(function (el) { el.classList.add('in'); }); }
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
@@ -108,7 +109,9 @@
       });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
     items.forEach(function (el) { io.observe(el); });
+    /* safety net: never leave content hidden if the observer misbehaves */
+    setTimeout(showAll, 2500);
   } else {
-    items.forEach(function (el) { el.classList.add('in'); });
+    showAll();
   }
 })();
