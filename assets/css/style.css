@@ -276,7 +276,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .xp { display: grid; gap: var(--gutter); grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .xp .panel { background: var(--paper); }
 .xp-item { padding: clamp(20px, 2.6vw, 30px); display: flex; flex-direction: column; gap: 14px; height: 100%; }
-.xp-item .row { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; }
+.xp-item > .cap, .xp-item .head > .cap { align-self: flex-start; }
 .xp-item h3 { font-size: clamp(1.25rem, 1.8vw, 1.55rem); }
 .xp-item h3 small { display: block; margin-top: 4px; font: 500 .9rem/1.3 var(--font-body); color: var(--ink-3); letter-spacing: 0; }
 .xp-item .role { font-family: var(--font-display); font-weight: 700; color: var(--accent); font-size: 1.02rem; letter-spacing: -0.01em; }
