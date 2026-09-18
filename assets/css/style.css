@@ -174,7 +174,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-family: "Anton", var(--font-display);
   font-weight: 400;
   font-size: clamp(4rem, 10.5vw, 9rem);
-  line-height: .9;
+  line-height: 1.02;
   letter-spacing: .01em;
   text-transform: uppercase;
   text-wrap: balance;
