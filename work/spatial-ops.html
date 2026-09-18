@@ -36,17 +36,16 @@
 
   <section class="chapter-head reveal">
     <div class="caps">
-      <span class="cap accent">2022 → · Meta Quest</span>
+      <span class="cap accent">2022 → · Mixed reality</span>
       <span class="cap tilt-r">Tech Lead · Gameplay Programmer</span>
     </div>
     <h1>Spatial Ops</h1>
-    <p class="lede">A high-fidelity mixed-reality shooter that maps your real room and turns it into a co-located multiplayer arena. I joined as a gameplay programmer, then led the code team of eight through launch and live updates, working across more than ten departments.</p>
+    <p class="lede">A high-fidelity mixed-reality shooter that maps your real room and turns it into a co-located multiplayer arena. Winner of the Auggie Award for Best Game 2025. I joined as a gameplay programmer, then ran technical production for an eight-engineer team through launch and live updates on Meta Quest, Steam, Pico and Apple Vision Pro.</p>
     <div class="facts">
       <span><b>Studio</b> Resolution Games, Stockholm</span>
       <span><b>Engine</b> Unity · C#</span>
-      <span><b>Netcode</b> Photon Fusion · Netcode for GameObjects</span>
-      <span><b>Platform</b> Meta Quest</span>
-      <span><b>Team</b> 8 engineers</span>
+      <span><b>Netcode</b> Photon Fusion 1, migrated to Fusion 2.1</span>
+      <span><b>Platforms</b> Meta Quest · Steam · Pico · Apple Vision Pro</span>
     </div>
   </section>
 
@@ -64,7 +63,7 @@
     <div class="awards">
       <div class="panel award reveal" data-cut="c">
         <span class="cap accent">Best Game</span>
-        <div><b>Auggie Awards</b><small>AWE · Best Game</small></div>
+        <div><b>Auggie Awards</b><small>AWE 2025 · Best Game</small></div>
       </div>
       <div class="panel award reveal" data-cut="m1">
         <span class="cap accent">Platinum</span>
@@ -94,22 +93,24 @@
       <div class="panel text-panel reveal" data-cut="a">
         <h2><span class="cap">01</span>As Tech Lead</h2>
         <ul>
-          <li>Led <b>8 engineers</b> and coordinated with 10+ departments so features landed integrated, not bolted on.</li>
-          <li>Owned milestone planning and task distribution. Worked with the Creative Lead on <b>roadmaps and technical feasibility</b>.</li>
-          <li>Kept the team aligned on architecture, coding conventions, naming standards and release process.</li>
-          <li>Turned technical complexity into <b>estimates producers could plan around</b>.</li>
-          <li>Secured tooling for designers and artists so nobody waited on the code team.</li>
-          <li>Used LLM agents (Claude) to <b>playtest builds autonomously</b> and to triage Profiler and Xcode crash logs.</li>
+          <li><b>Production and delivery.</b> Directed end-to-end technical production: milestone planning, sprint cycles and daily task distribution for an <b>8-engineer team</b>, from prototype to release and live updates.</li>
+          <li><b>Vendors and co-dev.</b> Managed deliverables and milestones for outsourced QA, localization co-development studios and contract audio and video engineers.</li>
+          <li><b>Cross-functional alignment.</b> Primary technical bridge across 10+ internal departments and external partners, so features landed integrated rather than bolted on.</li>
+          <li><b>Technical PR and media.</b> Secure build distribution, technical access and direct troubleshooting for media partners, influencers and PR stakeholders during review cycles.</li>
+          <li><b>Feasibility and scope.</b> Defined feature roadmaps with the Creative Lead, evaluated viability, and cleared risks and bottlenecks before they touched the timeline.</li>
+          <li><b>Backend health and live monitoring.</b> Watched Photon backend health alongside telemetry and crash reporting, and drove rapid resolution of live outages.</li>
+          <li><b>Pipeline and tooling.</b> Championed the <b>Bot State Machine Editor</b> and <b>Campaign Event Designer</b> so designers could build content without waiting on engineers.</li>
+          <li><b>QA and process automation.</b> Brought <b>LLM-driven automated playtesting agents</b> and AI workflows (Claude, Unity CLI) into the native pipeline, speeding up QA iteration and root-cause bug analysis for the whole team.</li>
         </ul>
       </div>
       <div class="panel text-panel reveal" data-cut="b">
         <h2><span class="cap">02</span>As Programmer</h2>
         <ul>
-          <li><b>Photon Fusion</b> and <b>Netcode for GameObjects</b> integration. NetworkObject and GameObject pooling.</li>
-          <li>3D grid <b>A* pathfinding</b> tuned for flying AI navigating real room geometry from spatial mapping data.</li>
+          <li><b>Photon Fusion 1</b> integration, later migrated to <b>Fusion 2.1</b>. NetworkObject and GameObject pooling system.</li>
+          <li>3D grid <b>A* pathfinding</b> optimised for flying AI navigating real room geometry from spatial mapping data.</li>
           <li>Custom editor tools: <b>Bot State Machine Editor</b> on Animator StateMachineBehaviours, and a <b>Campaign Event Designer</b> for levels, Timeline cutscenes and enemy encounters.</li>
           <li>Hitscan and projectile weapons, damage system, ragdoll hit reactions, HUD.</li>
-          <li>UniTask for async gameplay code. Addressables for map event themes and asset streaming.</li>
+          <li>UniTask for high-performance async gameplay code. Addressables for map event themes and asset streaming.</li>
           <li>Telemetry analytics and Unity crash/exception reporting for live game health.</li>
           <li>Stability and memory work with <b>Unity Profiler, Memory Profiler, Project Auditor, Profile Analyzer</b> and Xcode for native crashes.</li>
           <li>Unity Localization.</li>
