@@ -46,26 +46,47 @@
   var panels = Array.prototype.slice.call(document.querySelectorAll('.panel'));
   panels.forEach(function (el) {
     var key = el.getAttribute('data-cut');
-    var p = PRESETS[key] || PRESETS[ORDER[i++ % ORDER.length]];
-    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    svg.setAttribute('class', 'panel-border');
-    svg.setAttribute('aria-hidden', 'true');
-    var poly = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
-    svg.appendChild(poly);
-    el.appendChild(svg);
-    el.__cutPoly = poly;
-    el.__cutPreset = p;
-    el.classList.add('has-cut');
-    layout(el, p);
+    el.__cutPreset = PRESETS[key] || PRESETS[ORDER[i++ % ORDER.length]];
   });
-  if ('ResizeObserver' in window) {
-    var ro = new ResizeObserver(function (entries) {
-      entries.forEach(function (en) { layout(en.target, en.target.__cutPreset); });
+
+  /* Phones get plain rectangles (the CSS border fallback). Cuts only from 701px up. */
+  var phone = window.matchMedia('(max-width: 700px)');
+  var ro = ('ResizeObserver' in window) ? new ResizeObserver(function (entries) {
+    entries.forEach(function (en) { if (en.target.__cutPoly) { layout(en.target, en.target.__cutPreset); } });
+  }) : null;
+
+  function enableCuts() {
+    panels.forEach(function (el) {
+      if (!el.__cutPoly) {
+        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('class', 'panel-border');
+        svg.setAttribute('aria-hidden', 'true');
+        var poly = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+        svg.appendChild(poly);
+        el.appendChild(svg);
+        el.__cutSvg = svg;
+        el.__cutPoly = poly;
+      }
+      el.classList.add('has-cut');
+      layout(el, el.__cutPreset);
+      if (ro) { ro.observe(el); }
     });
-    panels.forEach(function (el) { ro.observe(el); });
-  } else {
+  }
+  function disableCuts() {
+    panels.forEach(function (el) {
+      el.style.clipPath = '';
+      if (el.__cutSvg) { el.removeChild(el.__cutSvg); el.__cutSvg = null; el.__cutPoly = null; }
+      el.classList.remove('has-cut');
+      if (ro) { ro.unobserve(el); }
+    });
+  }
+  function applyMode() { if (phone.matches) { disableCuts(); } else { enableCuts(); } }
+  applyMode();
+  if (phone.addEventListener) { phone.addEventListener('change', applyMode); }
+  else if (phone.addListener) { phone.addListener(applyMode); }
+  if (!ro) {
     window.addEventListener('resize', function () {
-      panels.forEach(function (el) { layout(el, el.__cutPreset); });
+      if (!phone.matches) { panels.forEach(function (el) { layout(el, el.__cutPreset); }); }
     });
   }
 
