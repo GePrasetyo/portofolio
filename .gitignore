@@ -1,2 +1,4 @@
 _*.html
 work/_*.html
+_site/
+.jekyll-cache/
