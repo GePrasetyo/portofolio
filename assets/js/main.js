@@ -10,8 +10,8 @@
      Presets are designed in complementary pairs so the gutter between
      neighbours stays parallel:
        a|b   c|d   c|m1|b   c|m1|m2|d   a|m2|d   w, w2 = full width   */
-  var V = 0.035, H = 0.014;            // tan(2°), tan(0.8°)
-  var MIN_V = 5, MAX_V = 22, MIN_H = 3, MAX_H = 14;
+  var V = 0.06, H = 0.02;              // tan(3.4°), tan(1.15°)
+  var MIN_V = 8, MAX_V = 36, MIN_H = 4, MAX_H = 18;
   var PRESETS = {                      // [tlx,tly, trx,try, brx,bry, blx,bly]
     a:  [0,1,   0,0,   1,0,   0,0.8],
     b:  [1,0,   0,0.8, 0,0,   0,1  ],
