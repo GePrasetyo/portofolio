@@ -250,7 +250,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .work-card:hover .media img { transform: scale(1.04); }
 .work-card .meta {
   position: absolute; left: 0; right: 0; top: 0; bottom: 0;
-  padding: clamp(16px, 2.2vw, 26px);
+  padding: clamp(28px, 2.6vw, 36px);
   display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;
   pointer-events: none;
 }
@@ -379,7 +379,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .shot img { position: absolute; top: 0; left: 0; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .shot.contain img { object-fit: contain; background: var(--paper-3); }
 .shot .label {
-  position: absolute; left: 14px; bottom: 14px; right: 14px;
+  position: absolute; left: 30px; bottom: 30px; right: 30px;
   display: flex; flex-direction: column; align-items: flex-start; gap: 6px;
 }
 .shot .label .cap { transform: rotate(-1deg); }
@@ -404,7 +404,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .yt .play svg { width: 14px; height: 14px; fill: currentColor; }
 .yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .yt .vtitle {
-  position: absolute; left: 14px; bottom: 14px; max-width: calc(100% - 28px);
+  position: absolute; left: 40px; bottom: 36px; max-width: calc(100% - 80px);
 }
 
 .chapter-nav { display: grid; gap: var(--gutter); grid-template-columns: repeat(2, minmax(0,1fr)); margin-top: clamp(24px, 4vw, 40px); }
