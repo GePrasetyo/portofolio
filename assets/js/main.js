@@ -107,6 +107,12 @@
 
   /* ---- lite YouTube ---------------------------------------------- */
   document.querySelectorAll('.yt').forEach(function (box) {
+    box.setAttribute('role', 'button');
+    box.setAttribute('tabindex', '0');
+    box.setAttribute('aria-label', 'Play video: ' + (box.getAttribute('data-title') || ''));
+    box.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); box.click(); }
+    });
     box.addEventListener('click', function () {
       var id = box.getAttribute('data-id');
       var f = document.createElement('iframe');

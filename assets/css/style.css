@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------
    Dhimas Prasetyo — portfolio
-   Comic-page panel layout on warm paper. Light + dark.
+   Comic-page panel layout. Off-white paper, ink, cobalt accent. Light + dark.
    ------------------------------------------------------------------ */
 
 :root {
@@ -14,10 +14,8 @@
   --accent-ink: #ffffff;
   --stroke: 2.5px;
   --gutter: 14px;
-  --radius: 2px;
   --font-display: "Archivo", "IBM Plex Sans", system-ui, sans-serif;
   --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --shadow: 0 1px 0 var(--ink);
   --ease: cubic-bezier(.2,.7,.2,1);
   color-scheme: light;
 }
@@ -83,7 +81,6 @@ h1, h2, h3, h4 {
 p { margin: 0; }
 ul { margin: 0; padding: 0; list-style: none; }
 .wrap { width: min(1180px, 100% - 32px); margin-inline: auto; }
-.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* ---------- nav ---------- */
 .nav {
@@ -136,9 +133,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .panel.has-cut { border: 0; }
 .panel-border {
   position: absolute; top: 0; left: 0; inset: 0; width: 100%; height: 100%;
-  pointer-events: none; z-index: 5;
+  pointer-events: none; z-index: 5; overflow: visible;
 }
-.panel-border { overflow: visible; }
 .panel-border polygon {
   fill: none; stroke: var(--ink);
   stroke-width: calc(var(--stroke) * 2);   /* half is clipped away */
@@ -213,12 +209,13 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- section heads ---------- */
 .section { padding: clamp(28px, 4vw, 48px) 0; }
+.section.tight { padding-top: 0; }
 .section-head {
   display: flex; align-items: flex-end; justify-content: space-between; gap: 16px;
   margin-bottom: clamp(16px, 2.4vw, 26px);
 }
 .section-head h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); }
-.section-head .cap { margin-bottom: 8px; }
+.section-head .cap { margin-bottom: 12px; }
 .section-head p { color: var(--ink-3); font-size: .95rem; max-width: 40ch; text-align: right; }
 
 /* ---------- work strip ---------- */
@@ -231,8 +228,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 .span-2 { grid-column: span 2; }
 .span-3 { grid-column: span 3; }
 .span-4 { grid-column: span 4; }
-.span-6 { grid-column: span 6; }
-.tall { grid-row: span 2; }
 .strip .panel.feature { min-height: clamp(320px, 46vw, 520px); }
 
 .work-card { display: block; position: relative; height: 100%; color: var(--ink); }
@@ -317,13 +312,14 @@ ul { margin: 0; padding: 0; list-style: none; }
 .edu small { display: block; color: var(--ink-3); margin-top: 10px; font-size: .88rem; }
 .about-list li { display: flex; gap: 12px; padding: 8px 0; color: var(--ink-2); }
 .about-list li b { flex: 0 0 110px; color: var(--ink); font-weight: 600; }
+.about-list a { text-decoration: underline; }
 
 /* ---------- contact ---------- */
 .contact-panel {
   padding: clamp(28px, 4vw, 56px) clamp(22px, 3.5vw, 52px);
   display: grid; gap: 28px; grid-template-columns: minmax(0, 1fr) auto; align-items: end;
 }
-.contact-panel h2 { font-size: clamp(2rem, 5vw, 3.6rem); text-wrap: balance; }
+.contact-panel h2 { font-size: clamp(2rem, 5vw, 3.6rem); text-wrap: balance; margin-top: 14px; }
 .contact-panel h2 span { color: var(--accent); }
 .contact-panel p { color: var(--ink-2); margin-top: 12px; max-width: 48ch; }
 
@@ -390,6 +386,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* lite youtube */
 .yt { position: relative; width: 100%; height: 100%; background: #000; cursor: pointer; }
+.yt:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
 .yt img { width: 100%; height: 100%; object-fit: cover; opacity: .92; transition: opacity .3s, transform .6s var(--ease); }
 .yt:hover img { opacity: 1; transform: scale(1.02); }
 .yt .play {
