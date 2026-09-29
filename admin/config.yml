@@ -13,6 +13,9 @@ backend:
 
 site_url: https://geprasetyo.github.io/portofolio/
 display_url: https://geprasetyo.github.io/portofolio/
+app_title: Portfolio Admin
+logo:
+  src: /portofolio/favicon.svg
 
 media_folder: /assets/img
 public_folder: /assets/img
