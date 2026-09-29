@@ -20,9 +20,9 @@ facts:
     - label: Looking for
       text: Lead, senior gameplay or multiplayer roles. Any platform, Unity or Unreal. On-site in Stockholm, hybrid, or remote.
     - label: Working style
-      text: I'd rather build the tool that removes a bottleneck than be the bottleneck. Designers and artists should never wait on the code team.
+      text: I build editor tools so designers and artists can keep working without waiting on a programmer.
     - label: Leading
-      text: Estimates people can plan around, honest feasibility calls, and a code team that knows what "done" means before it starts.
+      text: I keep estimates realistic and say early when something won't make it. Before a task starts, the team agrees on what done looks like.
     - label: Lately
       text: Building automation that runs tests and investigates logs, and using Claude to playtest builds and triage crash reports.
     - label: Elsewhere
