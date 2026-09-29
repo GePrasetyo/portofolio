@@ -1,0 +1,69 @@
+cap: Experience
+heading: Where I've worked
+note: Newest first.
+jobs:
+  - dates: Jul 2022 – present
+    company: Resolution Games
+    location: Stockholm, Sweden
+    roles:
+      - "Tech Lead, Spatial Ops · Mar 2023 – present"
+      - "Gameplay Programmer · Jul 2022 – Feb 2023"
+    bullets:
+      - "Directed technical production for Spatial Ops, **Auggie Award Best Game 2025**: milestone planning, sprint cycles and daily task distribution for an **8-engineer team**, across Meta Quest, Steam, Pico and Apple Vision Pro."
+      - "Managed outsourced QA, localization co-dev studios and contract audio/video engineers. Primary technical bridge across **10+ departments**, media partners and PR."
+      - "Championed custom tooling (**Bot State Machine Editor**, **Campaign Event Designer**) and brought **LLM-driven automated playtesting** (Claude, Unity CLI) into the pipeline."
+      - "Monitored Photon backend health, telemetry and crash reporting; drove rapid resolution of live outages."
+      - "Hands-on: 3D grid A* pathfinding for flying AI in real rooms, UniTask, Photon Fusion 1 to 2.1 migration."
+    wide: true
+    cut: w
+  - dates: Dec 2019 – Mar 2022
+    company: Deep Dive Studio
+    location: Singapore
+    roles:
+      - Senior Gameplay Programmer (Multiplayer)
+    bullets:
+      - "Led **3 engineers** on Virtual Taekwondo, featured in the **Olympic Esports Series**."
+      - "Architected the **serverless backend** in Node.js on AWS Lambda for match data, telemetry and game logic. Initiated discussions with **AWS Game Tech** on cloud adoption."
+      - "Mocap pipeline in Unreal via Live Link and Animation Blueprints. Multiplayer Go game with gRPC (Go backend, Unity client)."
+    cut: c
+  - dates: Mar 2019 – Dec 2019
+    company: iSentric
+    location: Jakarta, Indonesia
+    roles:
+      - Gameplay Programmer
+    bullets:
+      - "Shipped **two mobile casino titles** on Android, Poker and Capsa."
+      - "Behavior Tree AI that plays like real people, keeping tables full and players engaged."
+    cut: d
+  - dates: Oct 2017 – Feb 2019
+    company: Visual Expert Animation
+    location: Jakarta, Indonesia
+    roles:
+      - VR Game Developer
+    bullets:
+      - "**SATS Ground Operation Training System**: VR training for aircraft pushback and ground power connection, shown on HTC Vive."
+      - "VR and AR arcade games for Zona Reality in Grand Indonesia. **AR wall game** on Xbox Kinect, horse-racing game driven by **custom microcontroller** sensors."
+    cut: a
+  - dates: Sep 2016 – Sep 2017
+    company: FXmedia
+    location: Singapore
+    roles:
+      - Game Developer
+    bullets:
+      - "**Gamified Training System**: desktop PC multiplayer training for a pharmacy school, plus e-learning for **NUS** Nursing Studies."
+      - "**Road Safety**, a mobile VR experience for the public."
+    cut: b
+  - dates: Mar 2015 – Aug 2016
+    company: Nusantara Beta Studio
+    location: Jakarta, Indonesia
+    roles:
+      - Game Developer
+    bullets:
+      - "First studio job. Three mobile games shipped in Unity and C#: **Pasukan Orange**, **Riot Rat** and **Flying CabeCabean** on Android and iOS."
+    cut: c
+education:
+  dates: Aug 2012 – Nov 2018
+  degree: BSc Computer Science
+  school: Syarif Hidayatullah State Islamic University (UIN) Jakarta
+  note: GPA 3.54 / 4.00 · Cum Laude · Bank Indonesia Scholarship
+  cut: d

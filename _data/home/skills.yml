@@ -1,0 +1,20 @@
+cap: Skills
+heading: What I work with
+note: Dark tags mark the deepest experience.
+groups:
+  - name: Engines & languages
+    top: [Unity, "C#", Unreal Engine, Blueprints]
+    other: ["C++", JavaScript / Node.js, Go]
+    cut: a
+  - name: Multiplayer & backend
+    top: [Photon Fusion 2, Photon PUN, "Unreal Engine Networking (Replication, RPCs)"]
+    other: [AWS GameLift, AWS Lambda, AWS DynamoDB, AWS Cognito, AWS API Gateway, AWS CloudWatch, Azure PlayFab, gRPC]
+    cut: b
+  - name: Performance & live ops
+    top: []
+    other: [Unity Profiler, Memory Profiler, Profile Analyzer, Project Auditor, Xcode crash logs, Unity Analytics, Google Analytics, BigQuery, Unity Crash Reporting, Game telemetry]
+    cut: c
+  - name: Pipeline & collaboration
+    top: []
+    other: [GitHub Actions, Claude, Jenkins, Git, Unity Version Control, Jira, Favro, Notion, Miro, Lucidchart, Figma, ComfyUI]
+    cut: d

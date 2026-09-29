@@ -1,0 +1,8 @@
+cap: Contact
+heading: Hiring for a lead or senior gameplay role?
+heading_accent: Let's talk.
+text: I'm based in Stockholm as a Swedish permanent resident, so no visa sponsorship needed. Open to lead, senior gameplay and multiplayer roles on any platform, in Unity or Unreal. Email is the fastest way to reach me. LinkedIn works too.
+links:
+  - { kind: email }
+  - { kind: link, label: LinkedIn, url: "https://www.linkedin.com/in/dhimasgprasetyo/" }
+  - { kind: resume, label: Résumé (PDF) }

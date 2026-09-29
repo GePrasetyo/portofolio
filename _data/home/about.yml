@@ -1,0 +1,29 @@
+cap: About
+heading: Recognition and quick facts
+recognition:
+  title: Recognition
+  cut: c
+  items:
+    - { badge: Best Game, title: Auggie Awards 2025, project: Spatial Ops }
+    - { badge: Platinum, title: Pinnacle Game Awards, project: Spatial Ops }
+    - { badge: Gold, title: "NYX Game Awards 2025 · Meta Quest VR Game, Multiplayer", project: Spatial Ops }
+    - { badge: Gold, title: NYX Game Awards 2023 · Best Innovation, project: Spatial Ops }
+    - { badge: Best MR Game, title: UploadVR 2024, project: Spatial Ops }
+    - { badge: Honoree, title: Webby Awards · Technical Achievement, project: Spatial Ops }
+    - { badge: Featured, title: Olympic Esports Series, project: Virtual Taekwondo, accent: false }
+facts:
+  title: Quick facts
+  cut: d
+  items:
+    - label: Location
+      text: "**Stockholm, Sweden.** Swedish permanent resident, so no visa sponsorship needed. Originally from Jakarta, three years in Singapore in between."
+    - label: Looking for
+      text: Lead, senior gameplay or multiplayer roles. Any platform, Unity or Unreal. On-site in Stockholm, hybrid, or remote.
+    - label: Working style
+      text: I'd rather build the tool that removes a bottleneck than be the bottleneck. Designers and artists should never wait on the code team.
+    - label: Leading
+      text: Estimates people can plan around, honest feasibility calls, and a code team that knows what "done" means before it starts.
+    - label: Lately
+      text: Building automation that runs tests and investigates logs, and using Claude to playtest builds and triage crash reports.
+    - label: Elsewhere
+      text: "[LinkedIn](https://www.linkedin.com/in/dhimasgprasetyo/), [GitHub](https://github.com/GePrasetyo), and [Instagram](https://www.instagram.com/majingari/) as majingari."

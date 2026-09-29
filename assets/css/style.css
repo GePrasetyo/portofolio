@@ -279,7 +279,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .xp-item .role + .role { color: var(--ink-2); }
 .xp-item ul li { position: relative; padding-left: 18px; margin: 6px 0; color: var(--ink-2); font-size: .97rem; }
 .xp-item ul li::before { content: ""; position: absolute; left: 0; top: .62em; width: 8px; height: 8px; background: var(--accent); border: 1.5px solid var(--ink); transform: rotate(45deg); }
-.xp-item ul li b { color: var(--ink); font-weight: 600; }
+.xp-item ul li b, .xp-item ul li strong { color: var(--ink); font-weight: 600; }
 .xp .span-2 { grid-column: span 2; }
 .xp .span-2 .xp-item { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 20px 40px; align-items: start; }
 .xp .span-2 .xp-item .head { display: flex; flex-direction: column; gap: 14px; }
@@ -355,7 +355,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   content: ""; position: absolute; left: 0; top: .7em; width: 9px; height: 9px;
   background: var(--accent); border: 1.5px solid var(--ink); transform: rotate(45deg);
 }
-.text-panel ul li b { color: var(--ink); font-weight: 600; }
+.text-panel ul li b, .text-panel ul li strong { color: var(--ink); font-weight: 600; }
 .text-panel p { color: var(--ink-2); }
 .text-panel p + p { margin-top: 12px; }
 

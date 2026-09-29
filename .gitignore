@@ -2,3 +2,4 @@ _*.html
 work/_*.html
 _site/
 .jekyll-cache/
+__pycache__/

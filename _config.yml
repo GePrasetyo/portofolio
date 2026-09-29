@@ -1,10 +1,23 @@
-# GitHub Pages builds this with Jekyll on every push. No local build needed.
+# GitHub Pages builds this with Jekyll on every push (.github/workflows/pages.yml). No local build needed.
+# Content lives in _data/ and _work/ and is edited through /admin (Sveltia CMS, admin/config.yml).
 title: Dhimas Prasetyo
 url: https://geprasetyo.github.io
 baseurl: /portofolio
 
 # Bump when style.css or main.js change so browsers fetch the new file.
-asset_version: 11
+asset_version: 12
+
+collections:
+  work:
+    output: true
+    permalink: /work/:name.html
+
+defaults:
+  - scope:
+      path: ""
+      type: work
+    values:
+      layout: work
 
 exclude:
   - _tools
