@@ -1,11 +1,11 @@
-meta_title: "Dhimas Prasetyo — Game Developer"
-meta_description: "Dhimas Prasetyo is a Stockholm-based game developer and tech lead. Gameplay and multiplayer systems in Unity (C#) and Unreal (C++), shipped across mobile, PC, VR/XR and console. Tech Lead on Spatial Ops at Resolution Games."
-share_image: /assets/img/spatial-ops.jpg
+meta_title: Dhimas Prasetyo — Game Developer
+meta_description: Dhimas Prasetyo is a Stockholm-based game developer and tech lead. Gameplay and multiplayer systems in Unity (C#) and Unreal (C++), shipped across mobile, PC, VR/XR and console. Tech Lead on Spatial Ops at Resolution Games.
+share_image: /assets/img/og.png
 title_lines:
-  - "Game Developer · Tech Lead · Technical Producer"
-  - "Mobile · PC · VR/XR · Console"
-  - "Unity (C#) · Unreal (C++)"
-about: |
+  - Game Developer · Tech Lead · Technical Producer
+  - Mobile · PC · VR/XR · Console
+  - Unity (C#) · Unreal (C++)
+about: |-
   Hi, I'm Dhimas, a game developer living in Stockholm with Swedish permanent residency. I've been shipping games since 2015:
   mobile titles in Jakarta, training sims and an Olympic-featured fighting game in Singapore,
   and now mixed reality at **Resolution Games**, where I lead the code team on Spatial Ops.
@@ -14,7 +14,15 @@ about: |
   Unreal and C++, Node.js backends on AWS. The part I enjoy most is taking a product all the way,
   from first prototype through launch and live ops.
 links:
-  - { kind: link, label: LinkedIn, url: "https://www.linkedin.com/in/dhimasgprasetyo/" }
-  - { kind: link, label: GitHub, url: "https://github.com/GePrasetyo" }
-  - { kind: email, label: Email }
-  - { kind: resume, label: Résumé (PDF) }
+  - kind: link
+    label: LinkedIn
+    url: https://www.linkedin.com/in/dhimasgprasetyo/
+  - kind: link
+    label: GitHub
+    url: https://github.com/GePrasetyo
+  - kind: email
+    label: Email
+    url: ''
+  - kind: resume
+    label: Résumé (PDF)
+    url: ''
