@@ -61,9 +61,16 @@ sections:
           - "3D grid **A* pathfinding** optimised for flying AI navigating real room geometry from spatial mapping data."
           - "Custom editor tools: **Bot State Machine Editor** on Animator StateMachineBehaviours, and a **Campaign Event Designer** for levels, Timeline cutscenes and enemy encounters."
           - "Hitscan and projectile weapons, damage system, ragdoll hit reactions, HUD."
+          - "Bullet impact VFX spawned at the weapon raycast hit point and aligned to the surface normal."
+          - "Pre-fractured **destructible walls**, with the fracture pattern generated procedurally from Voronoi noise."
+          - "Deterministic, seed-based **procedural world generator**: river-network skeleton, fractal noise, stream-power hydraulic erosion and D8 flow accumulation."
+          - "NetworkObject/GameObject **pooling** on UniTask for Photon Fusion."
+          - "Humanoid animation setup (Avatar rig and muscles) and a bone rebinder that maps each SkinnedMeshRenderer to its rig, so all characters share one animation set."
+          - "Drone and helicopter locomotion that banks and pitches from yaw and pitch input."
           - "UniTask for high-performance async gameplay code. Addressables for map event themes and asset streaming."
           - "Telemetry analytics and Unity crash/exception reporting for live game health."
-          - "Stability and memory work with **Unity Profiler, Memory Profiler, Project Auditor, Profile Analyzer** and Xcode for native crashes."
+          - "Stability and memory work with **Unity Profiler, Memory Profiler, Project Auditor, Profile Analyzer** and Xcode for native crashes, plus a Python symbolication pipeline for IL2CPP crash logs."
+          - "Build machine and **GitHub Actions CI/CD** for Quest, Pico, Vision Pro and Steam (Windows/Mac), with per-platform package loading so each build ships only what its target needs."
           - "Unity Localization."
   - type: gallery
     items:

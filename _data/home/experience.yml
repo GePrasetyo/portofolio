@@ -12,8 +12,8 @@ jobs:
       - "Directed technical production for Spatial Ops, **Auggie Award Best Game 2025**: milestone planning, sprint cycles and daily task distribution for an **8-engineer team**, across Meta Quest, Steam, Pico and Apple Vision Pro."
       - "Managed outsourced QA, localization co-dev studios and contract audio/video engineers. Primary technical bridge across **10+ departments**, media partners and PR."
       - "Championed custom tooling (**Bot State Machine Editor**, **Campaign Event Designer**) and brought **LLM-driven automated playtesting** (Claude, Unity CLI) into the pipeline."
-      - "Monitored Photon backend health, telemetry and crash reporting; drove rapid resolution of live outages."
-      - "Hands-on: 3D grid A* pathfinding for flying AI in real rooms, UniTask, Photon Fusion 1 to 2.1 migration."
+      - "Build and live ops: GitHub Actions CI/CD for Quest, Pico, Vision Pro and Steam (Windows/Mac) with per-platform package loading, a Python crash-symbolication pipeline for IL2CPP builds, telemetry and Photon backend monitoring."
+      - "Hands-on: 3D grid A* pathfinding for flying AI in real rooms, Voronoi pre-fractured destructible walls, seed-based procedural terrain with hydraulic erosion, NetworkObject pooling on UniTask, Photon Fusion 1 to 2.1 migration."
     wide: true
     cut: w
   - dates: Dec 2019 – Mar 2022
@@ -24,7 +24,8 @@ jobs:
     bullets:
       - "Led **3 engineers** on Virtual Taekwondo, featured in the **Olympic Esports Series**."
       - "Architected the **serverless backend** in Node.js on AWS Lambda for match data, telemetry and game logic. Initiated discussions with **AWS Game Tech** on cloud adoption."
-      - "Mocap pipeline in Unreal via Live Link and Animation Blueprints. Multiplayer Go game with gRPC (Go backend, Unity client)."
+      - "Server-side **lag compensation** for hit registration, checking hits against a per-tick history of hitbox positions."
+      - "Mocap-driven character controller in Unreal via Live Link and Animation Blueprints. Multiplayer Go game with gRPC (Go backend, Unity client)."
     cut: c
   - dates: Mar 2019 – Dec 2019
     company: iSentric

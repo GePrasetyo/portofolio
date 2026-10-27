@@ -38,8 +38,10 @@ sections:
         bullets:
           - "Led 3 engineers delivering the core gameplay features."
           - "**LAN and client-server** architecture in Unreal for fast-paced one-on-one matches."
-          - "Motion capture pipeline through **Live Link** and Animation Blueprints."
-          - "Game finite state machine driving match flow. Damage system, UI and HUD, player input, scene management."
+          - "Server-side **lag compensation**: the server keeps a per-tick history of hitbox positions and checks each hit against where the target was on the attacker's tick."
+          - "Character controller driven by runtime motion capture through **Live Link** and Animation Blueprints."
+          - "Custom node-based, persistent **state machine** in UE4 for game flow (main menu, lobby, character select, match), instead of reusing Animation Blueprint state machines."
+          - "UI and HUD in **UMG**. Damage system, player input, scene management."
           - "Multiplayer **Go** board game at the same studio: gRPC backend in Go, Unity C# client."
   - type: gallery
     items:
